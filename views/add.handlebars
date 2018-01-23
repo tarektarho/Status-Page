@@ -1,0 +1,42 @@
+<div class="container add">
+    <form class="container" id="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Wrtie Status</label>
+                <input type="text" class="form-control" id="incidentStatus" placeholder="status or ongoing"  required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Description(title)</label>
+                <input type="text" class="form-control" id="incidentTitle" placeholder="Server is Ok Or  Server is Down"  required>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Date</label>
+                <input type="text" class="form-control" id="incidentDate" placeholder="01/01/2017">
+                <div class="invalid-feedback">
+                    Please provide a date.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="add-incident-button" type="button">Submit</button>
+    </form>
+</div>
+<hr>
+<div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-twothird">
+            <h5>Last Incidents</h5>
+            <table class="w3-table w3-striped w3-white">
+                <tr>
+                    <td class="incidentList"></td>
+                    <td><i>12-11-2017</i></td>
+                </tr>
+            </table>
+            <hr>
+            <button type="submit" class="btn btn-danger" id="delete-incident-button">Close</button>
+        </div>
+    </div>
+</div>
+<hr>
